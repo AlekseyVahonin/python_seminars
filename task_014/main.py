@@ -5,7 +5,12 @@
 
 n = int(input("Введите число N: "))
 
-i = 1
-while i <= n:
-    print(i)
-    i *=2
+# i = 1
+# while i <= n:
+#     print(i)
+#     i *=2
+
+i = 0
+while 2 ** i <= n:
+    print(2 ** i)
+    i += 1
