@@ -11,7 +11,6 @@ k = 3
 
 count = 0
 for i in list_1:
-    print(i)
     if i == k:
         count += 1
 print(count)
