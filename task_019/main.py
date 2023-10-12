@@ -6,12 +6,9 @@
 # Input: [1, 2, 3, 4, 5] k = 3
 # Output: [4, 5, 1, 2, 3]
 
-k = int(input('На сколько элементов сдвинуть список: '))
-
 int_number = [1, 2, 3, 4, 5]
 print(int_number)
 
-if k > 0 and k <= len(int_number):
-    print(int_number[k:] + int_number[:k])
-else:
-    print(f'Введите число больше 0 и меньше {len(int_number)}')
+k = int(input('На сколько элементов сдвинуть список: ')) % len(int_number)
+
+print(int_number[k:] + int_number[:k])
